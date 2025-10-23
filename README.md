@@ -9,4 +9,4 @@
 - **ngModel** for two-way data binding
 - **@Input() / @Output()** for component communication
 
-![To-Do List Screenshot](./public/assets/projectimg.png)
+![To-Do List Screenshot](./src/projectimg.png)
