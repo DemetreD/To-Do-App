@@ -1,7 +1,7 @@
 .tasklist {
   padding: 1rem;
   margin: 2rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .task {
@@ -60,4 +60,15 @@ input[type='checkbox'] {
   color: #fff;
   padding: 0.4rem;
   border-radius: 8px;
+}
+
+.delete {
+  width: 20px;
+  height: 20px;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
