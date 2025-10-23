@@ -1,0 +1,30 @@
+<section class="tasklist">
+  @if(activeCategory) {
+  <h1>{{ activeCategory }}</h1>
+  }
+  <input
+    [(ngModel)]="newTask"
+    (keydown.enter)="addingTask()"
+    type="text"
+    placeholder="Add a new task inside '{{ activeCategory }}' category"
+    class="task__input"
+  />
+  @for(task of taskList; track task; let i = $index) { @if(activeCategory === 'All' || task.category
+  === activeCategory){
+  <div class="task">
+    <div class="left">
+      <input
+        type="checkbox"
+        (click)="completedTask(i)"
+        [checked]="task.completed"
+        class="task__complete"
+      />
+      <p [class.completed]="task.completed" class="task__list">{{ task.task }}</p>
+      <span class="category">{{ task.category }}</span>
+    </div>
+
+    <button (click)="deleteTask(i)">d</button>
+    <!-- <img src="assets/delete.png" alt="" /> -->
+  </div>
+  } }
+</section>

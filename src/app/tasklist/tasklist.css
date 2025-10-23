@@ -1,0 +1,63 @@
+.tasklist {
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid red;
+}
+
+.task {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid rebeccapurple; */
+  margin-top: 2rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task__input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.task__input:focus {
+  border: none;
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.task__list {
+  font-size: 1.125rem;
+}
+
+input[type='checkbox'] {
+  accent-color: #ea5959;
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.category {
+  margin-left: 1rem;
+  width: 100px;
+  height: 24px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #ea5959;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 8px;
+}
