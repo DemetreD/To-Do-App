@@ -1,0 +1,5 @@
+<ul class="sidebar">
+  @for(cat of categories; track cat) {
+  <li (click)="onCategorySelect(cat)" [class.active]="cat === selectedCategory">{{ cat }}</li>
+  }
+</ul>
